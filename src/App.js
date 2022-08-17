@@ -11,7 +11,7 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 const App = () => {
   const [open, setOpen] = useState(false);
-  const [mode, setMode] = useState("dark");
+  const [mode, setMode] = useState("light");
   const darktheme = createTheme({
     palette: {
       mode: mode,
@@ -25,7 +25,7 @@ const App = () => {
         flexDirection="row"
       >
         <Navbar />
-        <Stack direction="row" spacing={2}>
+        <Stack direction="row" spacing={0}>
           <Sidebar mode={mode} setMode={setMode} />
           <Feed />
           <Rightbar />

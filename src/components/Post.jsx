@@ -16,7 +16,7 @@ import ReplyIcon from "@mui/icons-material/Reply";
 import { red } from "@mui/material/colors";
 import React from "react";
 
-const Post = () => {
+const Post = ({ userimage, caption, postimage, username }) => {
   return (
     <Card
       variant="outlined"
@@ -27,7 +27,7 @@ const Post = () => {
     >
       <Box sx={{ display: "flex", alignItems: "center", gap: 1, pb: 1, pl: 1 }}>
         <Avatar
-          src="https://media-exp1.licdn.com/dms/image/C4D03AQEspumm_GLsrA/profile-displayphoto-shrink_800_800/0/1643978487936?e=1665619200&v=beta&t=C4JtPJpSqcEHsBKi6_DcKUN13mbu4B0_QRvWXC8ivhM"
+          src={userimage}
           sx={{
             border: "2px solid",
             borderColor: "background.body",
@@ -36,7 +36,7 @@ const Post = () => {
           }}
         ></Avatar>
         <Box>
-          <Typography fontWeight="500">aleeism</Typography>
+          <Typography fontWeight="500">{username}</Typography>
           <Typography component="span" fontWeight="300" fontSize={12}>
             Wed, 23 Aug
           </Typography>
@@ -46,13 +46,14 @@ const Post = () => {
         </IconButton>
       </Box>
       <Typography component="p" sx={{ px: 2, pb: 1 }}>
-        Hey it's me there
+        {caption}
       </Typography>
       <CardMedia
         component="img"
         height="360"
-        image="https://images.pexels.com/photos/2559941/pexels-photo-2559941.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        alt="Paella dish"
+        image={postimage}
+        alt="image_here"
+        
       />
       <Box
         sx={{
