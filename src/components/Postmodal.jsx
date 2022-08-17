@@ -44,8 +44,6 @@ const Postmodal = ({ open, setOpen }) => {
       <Box
         width={400}
         height={300}
-        bgcolor={"background.default"}
-        color={"text.primary"}
         borderRadius={3}
         p={2}
         pb={0}

@@ -15,6 +15,7 @@ import LocalFireDepartmentIcon from "@mui/icons-material/LocalFireDepartment";
 import Notifications from "@mui/icons-material/Notifications";
 import Mail from "@mui/icons-material/Mail";
 import Fade from "@mui/material/Fade";
+import { useTheme } from "@mui/material/styles";
 const StyledToolbar = styled(Toolbar)({
   display: "flex",
   justifyContent: "space-between",
@@ -46,6 +47,7 @@ const Userbox = styled(Box)(({ theme }) => ({
 }));
 
 const Navbar = () => {
+  const theme = useTheme();
   const [open, setOpen] = useState(false);
   return (
     <AppBar position="sticky">
@@ -66,7 +68,7 @@ const Navbar = () => {
           <Input
             placeholder="Search..."
             disableUnderline
-            sx={{ width: "100%", color: "text.primary" }}
+            sx={{ width: "100%", color: "black" }}
           />
         </Search>
         <Icons>

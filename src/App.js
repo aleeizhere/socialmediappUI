@@ -26,7 +26,7 @@ const App = () => {
       >
         <Navbar />
         <Stack direction="row" spacing={2}>
-          <Sidebar />
+          <Sidebar mode={mode} setMode={setMode} />
           <Feed />
           <Rightbar />
         </Stack>
