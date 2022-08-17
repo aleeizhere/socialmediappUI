@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/socialmediappui/static/css/main.3982e415.css",
-    "main.js": "/socialmediappui/static/js/main.d69e2e4b.js",
-    "index.html": "/socialmediappui/index.html",
-    "main.3982e415.css.map": "/socialmediappui/static/css/main.3982e415.css.map",
-    "main.d69e2e4b.js.map": "/socialmediappui/static/js/main.d69e2e4b.js.map"
+    "main.css": "/socialmediappUI/static/css/main.3982e415.css",
+    "main.js": "/socialmediappUI/static/js/main.8e053a82.js",
+    "index.html": "/socialmediappUI/index.html",
+    "main.3982e415.css.map": "/socialmediappUI/static/css/main.3982e415.css.map",
+    "main.8e053a82.js.map": "/socialmediappUI/static/js/main.8e053a82.js.map"
   },
   "entrypoints": [
     "static/css/main.3982e415.css",
-    "static/js/main.d69e2e4b.js"
+    "static/js/main.8e053a82.js"
   ]
 }
