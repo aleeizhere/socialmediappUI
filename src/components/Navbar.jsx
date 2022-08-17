@@ -10,12 +10,15 @@ import {
   Avatar,
   Menu,
   MenuItem,
+  Switch,
+  ListItemIcon,
 } from "@mui/material";
 import LocalFireDepartmentIcon from "@mui/icons-material/LocalFireDepartment";
 import Notifications from "@mui/icons-material/Notifications";
 import Mail from "@mui/icons-material/Mail";
 import Fade from "@mui/material/Fade";
 import { useTheme } from "@mui/material/styles";
+import ModeNight from "@mui/icons-material/ModeNight";
 const StyledToolbar = styled(Toolbar)({
   display: "flex",
   justifyContent: "space-between",
@@ -46,7 +49,7 @@ const Userbox = styled(Box)(({ theme }) => ({
   },
 }));
 
-const Navbar = () => {
+const Navbar = ({ mode, setMode }) => {
   const theme = useTheme();
   const [open, setOpen] = useState(false);
   return (
@@ -120,6 +123,16 @@ const Navbar = () => {
         <MenuItem>Profile</MenuItem>
         <MenuItem>My account</MenuItem>
         <MenuItem>Logout</MenuItem>
+        <MenuItem>
+          <ListItemIcon>
+            <ModeNight />
+          </ListItemIcon>
+          <Switch
+            onClick={(e) => {
+              mode === "light" ? setMode("dark") : setMode("light");
+            }}
+          />
+        </MenuItem>
       </Menu>
     </AppBar>
   );

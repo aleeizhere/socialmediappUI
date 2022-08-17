@@ -24,7 +24,7 @@ const App = () => {
         color={"text.primary"}
         flexDirection="row"
       >
-        <Navbar />
+        <Navbar mode={mode} setMode={setMode} />
         <Stack direction="row" spacing={0}>
           <Sidebar mode={mode} setMode={setMode} />
           <Feed />
