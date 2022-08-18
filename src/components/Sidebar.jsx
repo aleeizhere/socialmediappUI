@@ -1,6 +1,5 @@
 import React from "react";
 import Box from "@mui/material/Box";
-import { deepPurple, indigo } from "@mui/material/colors";
 import {
   List,
   ListItem,
