@@ -10,11 +10,9 @@ import {
   ListItem,
   ListItemAvatar,
   ListItemText,
-  styled,
   Typography,
 } from "@mui/material";
 import StandardImageList from "./StandardImageList";
-import { indigo } from "@mui/material/colors";
 
 const Rightbar = () => {
   return (
